@@ -1,0 +1,28 @@
+{
+  "name": "pengona-website",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@headlessui/react": "^1.7.15",
+    "@heroicons/react": "^2.0.18",
+    "autoprefixer": "10.4.14",
+    "framer-motion": "^10.12.16",
+    "next": "13.4.4",
+    "postcss": "8.4.24",
+    "rc-banner-anim": "^2.4.5",
+    "rc-tween-one": "^3.0.6",
+    "react": "18.2.0",
+    "react-dom": "^18.2.0",
+    "react-icons": "^4.9.0",
+    "react-slick": "^0.29.0",
+    "slick-carousel": "^1.8.1",
+    "swiper": "^9.4.1",
+    "tailwindcss": "3.3.2"
+  }
+}
