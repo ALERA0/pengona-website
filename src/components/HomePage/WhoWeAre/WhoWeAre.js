@@ -17,12 +17,12 @@ const WhoWeAre = () => {
       <div className=" mt-28 w-full flex lg:flex-row flex-col lg:px-20 px-5 pt-24  bg-[#000E36] lg:h-[1300px] ">
         <div className="lg:w-1/2 w-full flex flex-col justify-start items-center lg:items-start  ">
           <div className="flex justify-start items-start lg:pl-16">
-            <h2 className="lg:text-6xl lg:text-5xl text-4xl font-bold text-start text-light mb-4">
+            <h2 className="lg:text-6xl md:text-5xl text-4xl font-bold text-start text-light mb-4">
               Biz Kimiz?
             </h2>
           </div>
           <div className="lg:flex hidden justify-center items-start pl-16 w-full mt-12 pr-8">
-            <Image src={brain} alt="brain" className="rounded-xl w-2/3" />
+            <Image src={brain} alt="brain" className="rounded-xl 2xl:w-2/3 xl:3/4 lg:4/5   " />
           </div>
         </div>
         <div className="lg:w-1/2 w-full  flex flex-col justify-start items-start lg:file:pr-14">

@@ -9,7 +9,7 @@ const GetContact = () => {
       </div>
       <div className=" w-full md:px-20 px-2">
         <div className="flex flex-col items-center justify-center bg-[#000E36] md:px-12 px-6 py-12 rounded-xl  gap-8">
-          <div className="w-full flex md:flex-row flex-col items-center justify-between md:gap-0 gap-8 ">
+          <div className="w-full flex md:flex-row flex-col items-center justify-between md:gap-4 lg:gap-8 gap-2 ">
             <input
               className="w-full md:w-auto px-4 py-2 rounded-lg text-lg"
               placeholder="Adınız"

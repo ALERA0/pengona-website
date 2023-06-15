@@ -13,7 +13,7 @@ const HizmetlerimizCard = ({ icon, text, title }) => {
         <h2 className="w-full text-center lg:text-2xl md:text-xl text-lg font-semibold text-[#2EE0FC] ">
           {title}
         </h2>
-        <p className="w-full flex justify-center items-center text-center lg:text-xl md:text-lg text-base font-semibold text-light ">
+        <p className="w-full flex justify-center items-center text-center 2xl:text-xl xl:text-lg lg:text-base text-smfont-semibold text-light ">
           {text}
         </p>
       </div>

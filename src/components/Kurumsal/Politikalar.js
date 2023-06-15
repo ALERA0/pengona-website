@@ -5,12 +5,12 @@ export default function Politikalar() {
   return (
     <div className="w-full  pt-16 lg:px-24 md:px-8 px-4">
       <div className="w-full flex justify-between md:gap-8 gap-2  ">
-        <div className="w-full ">
+        <div className="w-1/2">
           <Disclosure>
             {({ open }) => (
               <>
-                <Disclosure.Button className="flex w-full justify-between rounded-lg bg-slate-300 px-4 py-2 text-left text-sm font-medium text-[#000E36] hover:bg-blue-300 focus:outline-none focus-visible:ring focus-visible:ring-purple-500 focus-visible:ring-opacity-75">
-                  <span>Gizlilik Politikası</span>
+                <Disclosure.Button className="flex w-full justify-between rounded-lg bg-slate-300 md:px-4 px-1 py-2 text-left text-sm font-medium text-[#000E36] hover:bg-blue-300 focus:outline-none focus-visible:ring focus-visible:ring-purple-500 focus-visible:ring-opacity-75">
+                  <span className="text-sm">Gizlilik Politikası</span>
                   <ChevronUpIcon
                     className={`${
                       open ? "rotate-180 transform" : ""
@@ -54,7 +54,7 @@ export default function Politikalar() {
             )}
           </Disclosure>
         </div>
-        <div className="w-full ">
+        <div className="w-1/2 ">
           <Disclosure>
             {({ open }) => (
               <>
