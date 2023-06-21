@@ -10,13 +10,22 @@ import linkedinIcon from "../../public/icons/socialMedia/linkedinW.svg";
 import menuIcon from "../../public/icons/hamburger.svg";
 import xIcon from "../../public/icons/xIcon.svg";
 import CustomLink from "./Navbar/CustomLink";
+import logo from "../../public/images/logo.jpg";
+
 
 const Navbar = () => {
-  const [openMenu, setOpenMenu] = useState(false);
+  const [openMenu, setOpenMenu] = useState(false);  
+
+  const phoneNumber = process.env.NEXT_PUBLIC_TEL_NUMBER;
+
+  const handlePhoneClick =()=>{
+    window.location.href = `tel:${phoneNumber}`;
+  }
+  
   return (
     <header className="w-full flex-col  ">
       {/* Navbar üstündeki mavi kısım */}
-      <div className="w-full md:flex hidden justify-end items-center  bg-[#0079FF] py-1 lg:px-44 md:px-12 px-7 gap-4">
+      <div className="w-full md:flex hidden justify-end items-center  bg-[#000E36] py-1 lg:px-44 md:px-12 px-7 gap-4">
         <Link href="/" >
           <Image src={facebookIcon} width={30} height={30} />
         </Link>
@@ -42,13 +51,8 @@ const Navbar = () => {
           </Link>
         </motion.div>
         {/* LOGO*/}
-        <a href="/">
-          <div className="flex items-center bg-blue-800 px-2 py-2 rounded-lg flex-col cursor-pointer ">
-            <h2 className="capitalize lg:text-4xl md:text-3xl text-2xl font-bold text-light">
-              PENGONA
-            </h2>
-            <p className="text-light text-sm lg:text-base ">Yazılım ve Mühendislik</p>
-          </div>
+        <a href="/" className="rounded-lg px-6 py-2 bg-[#000E36]  ">
+          <Image src={logo} alt="logo" width={220} height={50} className="rounded-lg " />
         </a>
         {/* Navbardaki Seçenekler*/}
         <nav className="flex  items-center  ">
@@ -78,16 +82,16 @@ const Navbar = () => {
             whileTap={{ scale: 0.9 }}
             className="lg:relative absolute left-0  "
           >
-            <Link
+            <div
               href="/"
-              className="lg:flex items-center bg-transparent py-3 lg:px-5 md:px-2 rounded-lg border border-solid border-[#0079FF] hover:shadow-xl ml-4 hidden "
+              className="lg:flex items-center bg-transparent py-3 lg:px-5 md:px-2 rounded-lg border border-solid border-[#0079FF] hover:shadow-xl ml-4 hidden cursor-pointer" onClick={handlePhoneClick}
             >
               {/* Icon ve Yazı*/}
               <Image src={phoneIcon} alt="telephone" width={20} height={20} />
               <p className="text-[#0079FF] ml-2 md:flex hidden ">
-                +905123456789
+                {phoneNumber}
               </p>
-            </Link>
+            </div>
           </motion.div>
           {/* Responsive olduğu durumdaki menu iconu  */}
           <motion.div
@@ -134,7 +138,7 @@ const Navbar = () => {
               "
               />
             </div>
-            <h2 className="w-full">AAA</h2>
+            
           </div>
         )}
       </div>

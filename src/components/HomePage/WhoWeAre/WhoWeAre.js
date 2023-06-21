@@ -26,7 +26,7 @@ const WhoWeAre = () => {
           </div>
         </div>
         <div className="lg:w-1/2 w-full  flex flex-col justify-start items-start lg:file:pr-14">
-          <p className="text-xl  text-start text-light pt-3 tracking-wide">
+          <div className="text-xl  text-start text-light pt-3 tracking-wide">
             Pengona Yazılım ailesi olarak, profesyonel ve yenilikçi çözümler
             sunarak müşteri memnuniyetini ön planda tutuyoruz.{" "}
             <span className="text-blue-400">
@@ -50,7 +50,7 @@ const WhoWeAre = () => {
                 </Link>
               </motion.div>
             </div>
-          </p>
+          </div>
           <div className="flex flex-col w-full mt-12">
             <p className="lg:text-2xl text-xl text-purple-800">
               // Başarımızın sırrı..

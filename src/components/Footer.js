@@ -8,20 +8,27 @@ import twitterIcon from "../../public/icons/socialMedia/twitter.svg";
 import linkedinIcon from "../../public/icons/socialMedia/linkedin.svg";
 import { motion } from "framer-motion";
 import phoneIcon from "../../public/icons/telephone.png";
+import logo from "../../public/images/logo.jpg";
 
 const Footer = () => {
+  const phoneNumber = process.env.NEXT_PUBLIC_TEL_NUMBER;
+  const email = process.env.NEXT_PUBLIC_EMAIL;
 
-  
+  const handlePhoneClick = () => {
+    window.location.href = `tel:${phoneNumber}`;
+  };
 
   return (
-    <footer className="w-full border-t-2 border-solid border-dark bg-[#000E36] ">
-      <Layout className="flex flex-col items-center justify-center pt-12 pb-0 md:!px-12 px-2 lg:!px-48 w-full !bg-[#000E36] ">
+    <footer className="w-full border-t-2 border-solid border-dark bg-[#000E30] ">
+      <Layout className="flex flex-col items-center justify-center pt-12 pb-0 md:!px-12 px-2 lg:!px-48 w-full !bg-[#000E30] ">
         {/* Footerın üst Kısmı */}
         <div className="flex items-center justify-between w-full h-full  ">
           <div className="flex flex-col items-start justify-center  ">
             <div className="flex flex-col items-start justify-center  text-white ">
               <h2 className=" mb-2 text-xl">Pengona</h2>
-              <a href="https://www.google.com/maps/place/Pengona+Yaz%C4%B1l%C4%B1m/@37.9833585,32.5205138,17z/data=!3m1!4b1!4m6!3m5!1s0x14d08f23a4285db5:0x55c83d9918c956d8!8m2!3d37.9833585!4d32.5205138!16s%2Fg%2F11q3y1x100?entry=ttu">Kosova Mah., Güneş Sk. No: 1G, 42300</a>
+              <a href="https://www.google.com/maps/place/Pengona+Yaz%C4%B1l%C4%B1m/@37.9833585,32.5205138,17z/data=!3m1!4b1!4m6!3m5!1s0x14d08f23a4285db5:0x55c83d9918c956d8!8m2!3d37.9833585!4d32.5205138!16s%2Fg%2F11q3y1x100?entry=ttu">
+                Kosova Mah., Güneş Sk. No: 1G, 42300
+              </a>
               <p className="mb-3"> Selçuklu/Konya</p>
             </div>
             <div className="flex items-center justify-center gap-2 ">
@@ -40,18 +47,19 @@ const Footer = () => {
             </div>
           </div>
           <div className="lg:flex hidden items-center justify-center  bg-[#001653] ">
-            <a href="/">
-              <div className="flex items-center bg-blue-800 px-2 py-2 rounded-lg flex-col cursor-pointer ">
-                <h2 className="capitalize text-4xl font-bold text-light">
-                  PENGONA
-                </h2>
-                <p className="text-light ">Yazılım ve Mühendislik</p>
-              </div>
+            <a href="/" >
+              <Image
+                src={logo}
+                alt="logo"
+                width={220}
+                height={50}
+                
+              />
             </a>
           </div>
           <div className="h-36 w-36 md:w-auto md:h-auto flex  md:mr-0  ">
             <Link
-              href="mailto:abcd@gmail.com"
+              href="mailto:info@pengona.com"
               target="_blank"
               className="text-light md:text-xl text-base md:ml-8 rounded-full underline hover:text-blue-300 flex justify-end items-end    "
             >
@@ -89,7 +97,7 @@ const Footer = () => {
             >
               {/* Icon ve Yazı*/}
               <Image src={phoneIcon} alt="telephone" width={20} height={20} />
-              <p className="text-[#000E36] ml-2  ">+905123456789</p>
+              <p className="text-[#000E36] ml-2  ">{phoneNumber}</p>
             </Link>
           </motion.div>
         </div>
