@@ -45,9 +45,9 @@ const Navbar = () => {
           whileHover={{ scale: 1.04 }}
           whileTap={{ scale: 0.9 }}
         >
-          <Link href="/">
+          <div href="/" onClick={handlePhoneClick}>
             <Image src={phoneIcon} alt="telephone" width={20} height={20} />
-          </Link>
+          </div>
         </motion.div>
         {/* LOGO*/}
         <a href="/" className="rounded-lg px-6 py-2 bg-[#000E36]  ">

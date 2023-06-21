@@ -47,14 +47,8 @@ const Footer = () => {
             </div>
           </div>
           <div className="lg:flex hidden items-center justify-center  bg-[#001653] ">
-            <a href="/" >
-              <Image
-                src={logo}
-                alt="logo"
-                width={220}
-                height={50}
-                
-              />
+            <a href="/">
+              <Image src={logo} alt="logo" width={220} height={50} />
             </a>
           </div>
           <div className="h-36 w-36 md:w-auto md:h-auto flex  md:mr-0  ">
@@ -72,14 +66,14 @@ const Footer = () => {
           whileTap={{ scale: 0.9 }}
           className="flex md:hidden w-full mt-6  "
         >
-          <Link
-            href="/"
+          <div
             className="flex md:hidden items-center bg-transparent py-3 lg:px-5 md:px-2 rounded-lg border border-solid border-[#0079FF] hover:shadow-xl  bg-white w-full justify-center  "
+            onClick={handlePhoneClick}
           >
             {/* Icon ve Yazı*/}
             <Image src={phoneIcon} alt="telephone" width={20} height={20} />
             <p className="text-[#000E36] ml-2 text-2xl ">+905123456789</p>
-          </Link>
+          </div>
         </motion.div>
         {/* Footerın alt Kısmı */}
         <div className="md:mt-12 mt-6 lg:px-44 md:px-16 px-4  py-6 flex items-center justify-between w-full  border-solid border-2 border-white text-light rounded-lg underline ">
