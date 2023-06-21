@@ -18,7 +18,7 @@ const Navbar = () => {
   const phoneNumber = process.env.NEXT_PUBLIC_TEL_NUMBER;
 
   const handlePhoneClick = () => {
-    window.location.href = `tel:+95433524256`;
+    window.location.href = `tel:+905433524256`;
   };
 
   return (
@@ -50,7 +50,7 @@ const Navbar = () => {
           </div>
         </motion.div>
         {/* LOGO*/}
-        <a href="/" className="rounded-lg px-6 py-2 bg-[#000E36]  ">
+        <a href="/" className="rounded-lg lg:px-6 md:px-3 py-1 bg-[#000E36]  ">
           <Image
             src={logo}
             alt="logo"
@@ -95,7 +95,7 @@ const Navbar = () => {
               {/* Icon ve Yazı*/}
               <Image src={phoneIcon} alt="telephone" width={20} height={20} />
               <p className="text-[#0079FF] ml-2 md:flex hidden ">
-                +95433524256
+                +905433524256
               </p>
             </div>
           </motion.div>
