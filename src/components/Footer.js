@@ -15,7 +15,7 @@ const Footer = () => {
   const email = process.env.NEXT_PUBLIC_EMAIL;
 
   const handlePhoneClick = () => {
-    window.location.href = `tel:${phoneNumber}`;
+    window.location.href = `tel:+95433524256`;
   };
 
   return (
@@ -97,7 +97,7 @@ const Footer = () => {
             >
               {/* Icon ve Yazı*/}
               <Image src={phoneIcon} alt="telephone" width={20} height={20} />
-              <p className="text-[#000E36] ml-2  ">{phoneNumber}</p>
+              <p className="text-[#000E36] ml-2  ">+95433524256</p>
             </Link>
           </motion.div>
         </div>
