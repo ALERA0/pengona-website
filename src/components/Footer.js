@@ -98,7 +98,7 @@ const Footer = () => {
       </Layout>
       <div className="   w-full border-t-2 border-solid border-white py-2 mt-8 bg-light">
         <p className="text-center text-sm text-[#000B27 ] ">
-          © {new Date().getFullYear()} Pengona Software, Tüm Hakları Saklıdır.
+          © 2006 - {new Date().getFullYear()} Pengona Software, Tüm Hakları Saklıdır.
           Kurumsal Web Sitesi Pengona Software tarafından yapılmıştır.
         </p>
       </div>
