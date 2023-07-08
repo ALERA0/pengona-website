@@ -91,7 +91,7 @@ const Footer = () => {
             >
               {/* Icon ve Yazı*/}
               <Image src={phoneIcon} alt="telephone" width={20} height={20} />
-              <p className="text-[#000E36] ml-2  ">+95433524256</p>
+              <p className="text-[#000E36] ml-2  ">+905433524256</p>
             </Link>
           </motion.div>
         </div>
