@@ -65,10 +65,11 @@ const Footer = () => {
           whileHover={{ scale: 1.04 }}
           whileTap={{ scale: 0.9 }}
           className="flex md:hidden w-full mt-6  "
+          onClick={handlePhoneClick}
         >
           <div
             className="flex md:hidden items-center bg-transparent py-3 lg:px-5 md:px-2 rounded-lg border border-solid border-[#0079FF] hover:shadow-xl  bg-white w-full justify-center  "
-            onClick={handlePhoneClick}
+            
           >
             {/* Icon ve Yazı*/}
             <Image src={phoneIcon} alt="telephone" width={20} height={20} />
