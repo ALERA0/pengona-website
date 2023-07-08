@@ -85,14 +85,14 @@ const Footer = () => {
             whileTap={{ scale: 0.9 }}
             className="md:relative absolute left-0  "
           >
-            <Link
-              href="/"
+            <div
+              onClick={handlePhoneClick}
               className="md:flex items-center bg-transparent py-3 lg:px-5 md:px-2 rounded-lg border border-solid border-[#0079FF] hover:shadow-xl ml-4 hidden bg-white "
             >
               {/* Icon ve Yazı*/}
               <Image src={phoneIcon} alt="telephone" width={20} height={20} />
               <p className="text-[#000E36] ml-2  ">+905433524256</p>
-            </Link>
+            </div>
           </motion.div>
         </div>
       </Layout>
