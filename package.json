@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev -p 3001",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
@@ -14,7 +14,7 @@
     "autoprefixer": "10.4.14",
     "dotenv": "^16.3.1",
     "framer-motion": "^10.12.16",
-    "next": "13.4.4",
+    "next": "^13.4.4",
     "postcss": "8.4.24",
     "rc-banner-anim": "^2.4.5",
     "rc-tween-one": "^3.0.6",
